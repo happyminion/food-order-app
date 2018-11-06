@@ -1,0 +1,26 @@
+/* Reusable components */
+
+
+/* General styles */
+
+h1 {
+  font-size: 24px;
+}
+
+/* HomePage */
+
+.home-hero-img-wrapper {
+  height: 500px;
+  background-image: url('./images/hero-img.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+.home-order-input {
+  height: 50px;
+  width: 500px;
+}
+
+/* Media quieries */
