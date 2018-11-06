@@ -4,7 +4,11 @@
 /* General styles */
 
 h1 {
-  font-size: 24px;
+  font-size: 32px;
+  font-family: 'PT Sans', sans-serif;
+}
+input {
+  outline: none;
 }
 
 /* HomePage */
@@ -17,10 +21,49 @@ h1 {
   justify-content: center;
   align-items: center;
   max-width: 100%;
-}
-.home-order-input {
-  height: 50px;
-  width: 500px;
+
+    section {
+      margin-bottom: 5%;
+    }
+
+    h1 {
+      background-color: #fafad6;
+      display: inline-block;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    label {
+      position: relative;
+    }
+    
+    label:before {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 0;
+      bottom: 0;
+      width: 23px;
+      background: url("https://image.flaticon.com/icons/svg/684/684809.svg");
+    }
+
+    .home-order-input {
+      height: 50px;
+      width: 500px;
+    }
+    
 }
 
 /* Media quieries */
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: calc(18px + (32 - 18) * ((100vw - 200px) / (768 - 200)));
+  }
+  .home-hero-img-wrapper .home-order-input {
+        width: calc(200px + (500 - 200) * ((100vw - 200px) / (768 - 200)));
+  }
+}
+    
